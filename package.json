@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "Model Context Protocol (stdio) server for Leap0",
   "keywords": ["leap0", "mcp", "model-context-protocol"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leap0-dev/leap0-mcp"
+  },
   "license": "Apache-2.0",
   "type": "module",
   "bin": {

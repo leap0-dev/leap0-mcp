@@ -1,4 +1,4 @@
-# `@leap0/leap0-mcp`
+# `@leap0/mcp`
 
 Model Context Protocol (MCP) server for [Leap0](https://leap0.dev), built on the [`leap0`](https://www.npmjs.com/package/leap0) JavaScript SDK. It exposes sandbox lifecycle, filesystem, and process tools over **stdio** so clients such as Cursor or Claude can manage Leap0 sandboxes.
 
@@ -10,15 +10,15 @@ Model Context Protocol (MCP) server for [Leap0](https://leap0.dev), built on the
 ## Install
 
 ```bash
-npm install -g @leap0/leap0-mcp
+npm install -g @leap0/mcp
 # or
-pnpm add -g @leap0/leap0-mcp
+pnpm add -g @leap0/mcp
 ```
 
 For one-off runs without a global install:
 
 ```bash
-npx @leap0/leap0-mcp --help
+npx @leap0/mcp --help
 ```
 
 From a clone of this repo, after `pnpm install` and `pnpm run build`:
@@ -100,8 +100,6 @@ Requires [`leap0`](https://www.npmjs.com/package/leap0) **0.5.x** (sandbox `memo
 1. Match the **`leap0` SDK** version this MCP package declares (see `dependencies` in `package.json`); run `pnpm update leap0` in a checkout or reinstall the published package so `node_modules` resolves to that range.
 2. **Rebuild** after dependency changes: `pnpm run build` (or `pnpm run ci` before merging).
 3. **Restart** the editor or MCP host so it spawns a fresh `leap0-mcp` process.
-
-Breaking SDK changes (field renames, units, new APIs) are reflected in the tool implementations in `src/tools/`; if you pin an older `leap0`, keep an older `@leap0/leap0-mcp` release that matches it.
 
 ## Troubleshooting
 

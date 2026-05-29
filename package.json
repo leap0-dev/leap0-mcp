@@ -1,6 +1,6 @@
 {
   "name": "@leap0/mcp",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Model Context Protocol (stdio) server for Leap0",
   "keywords": ["leap0", "mcp", "model-context-protocol"],
   "license": "Apache-2.0",
